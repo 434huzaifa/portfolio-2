@@ -1,0 +1,411 @@
+{
+  "siteMetadata": {
+    "title": "MD. Huzaifa - Software Engineer Portfolio",
+    "description": "Full-stack Software Engineer specializing in NestJS, React, Microservices, and Modern Web Technologies. Award-winning developer at Sheba Platform Limited.",
+    "author": "MD. Huzaifa",
+    "keywords": ["Software Engineer", "Full Stack Developer", "NestJS", "React", "Microservices", "Docker", "Next.js", "TypeScript"],
+    "siteUrl": "https://mdhuzaifa.dev"
+  },
+  "hero": {
+    "name": "MD. HUZAIFA",
+    "title": "Software Engineer",
+    "tagline": "Building scalable web applications with modern technologies",
+    "description": "Full-stack developer specializing in backend architectures, microservices, and seamless user experiences",
+    "photo": "/Huzaifa.png",
+    "showPhoto": true,
+    "primaryTech": ["NestJS", "React", "TypeScript", "Docker", "Microservices"],
+    "cta": {
+      "primary": {
+        "text": "View My Work",
+        "link": "#projects"
+      },
+      "secondary": {
+        "text": "Contact Me",
+        "link": "#contact"
+      }
+    },
+    "socialLinks": {
+      "github": "https://github.com/huzaifa",
+      "linkedin": "https://linkedin.com/in/md-huzaifa",
+      "email": "saadhuzaifa2497@gmail.com",
+      "whatsapp": "https://wa.link/623ss0"
+    }
+  },
+  "about": {
+    "title": "About Me",
+    "summary": "Software Engineer with expertise in building scalable web applications and microservice architectures. Core developer at Sheba Platform Limited, contributing to award-winning FinTech products. Passionate about clean code, system design, and delivering high-impact solutions.",
+    "highlights": [
+      "Core developer of Sheba Pay - FinTech Start-Up of the Year 2025",
+      "Backend developer for award-recognized PSP Passthrough module",
+      "Full-cycle development experience across multiple tech stacks",
+      "Published research on automated application testing using deep learning"
+    ],
+    "focus": [
+      "Backend Architecture & Microservices",
+      "Full Stack Development",
+      "Payment Systems & FinTech",
+      "System Performance & Scalability"
+    ]
+  },
+  "skills": {
+    "title": "Skills & Technologies",
+    "categories": [
+      {
+        "name": "Languages",
+        "items": [
+          { "name": "Python", "icon": "py" },
+          { "name": "JavaScript", "icon": "js" },
+          { "name": "TypeScript", "icon": "ts" }
+        ],
+        "visible": true
+      },
+      {
+        "name": "Backend Development",
+        "items": [
+          { "name": "Django", "icon": "django" },
+          { "name": "Flask", "icon": "flask" },
+          { "name": "Express", "icon": "express" },
+          { "name": "Node.js", "icon": "nodejs" },
+          { "name": "NestJS", "icon": "nestjs" },
+          { "name": "Deno", "icon": "deno" },
+          { "name": "Supabase", "icon": "supabase" }
+        ],
+        "visible": true
+      },
+      {
+        "name": "Frontend Development",
+        "items": [
+          { "name": "React", "icon": "react" },
+          { "name": "Next.js", "icon": "nextjs" },
+          { "name": "Jinja" },
+          { "name": "EJS" }
+        ],
+        "visible": true
+      },
+      {
+        "name": "Databases",
+        "items": [
+          { "name": "MySQL", "icon": "mysql" },
+          { "name": "PostgreSQL", "icon": "postgres" },
+          { "name": "MongoDB", "icon": "mongodb" },
+          { "name": "MSSQL" },
+          { "name": "Oracle" },
+          { "name": "SQLite", "icon": "sqlite" }
+        ],
+        "visible": true
+      },
+      {
+        "name": "DevOps & Tools",
+        "items": [
+          { "name": "Docker", "icon": "docker" },
+          { "name": "Git", "icon": "git" },
+          { "name": "Linux", "icon": "linux" },
+          { "name": "Postman", "icon": "postman" },
+          { "name": "Figma", "icon": "figma" }
+        ],
+        "visible": true
+      },
+      {
+        "name": "Architecture & Concepts",
+        "items": [
+          { "name": "Microservices" },
+          { "name": "REST APIs" },
+          { "name": "JWT Authentication" },
+          { "name": "Payment Systems" },
+          { "name": "CI/CD" }
+        ],
+        "visible": true
+      },
+      {
+        "name": "Soft Skills",
+        "items": [
+          { "name": "Leadership" },
+          { "name": "Team Player" },
+          { "name": "Communication" }
+        ],
+        "visible": false,
+        "showInSeeMore": true
+      }
+    ]
+  },
+  "experience": {
+    "title": "Work Experience",
+    "positions": [
+      {
+        "company": "Sheba Platform Limited",
+        "position": "Software Engineer",
+        "location": "Dhaka, Bangladesh",
+        "duration": "DEC 2024 – DEC 2025",
+        "techStack": ["NestJS", "React", "Microservices", "Docker"],
+        "description": "Core developer of Sheba Pay, the platform that won 'FinTech Start-Up of the Year 2025' at the 3rd Bangladesh Fintech Awards, contributing to major product features across the system.",
+        "highlights": [
+          "Core developer of Sheba Pay, the platform that won 'FinTech Start-Up of the Year 2025' at the 3rd Bangladesh Fintech Awards",
+          "Backend developer for the award-recognized PSP Passthrough module with Honorable Mention for 'FinTech Innovation of the Year (NBFI)'",
+          "Delivered full-cycle development across frontend and backend, including API integrations and business logic",
+          "Collaborated with cross-functional teams to enhance platform performance, reliability, and user experience"
+        ],
+        "featured": true,
+        "visible": true
+      },
+      {
+        "company": "Workspace InfoTech Limited",
+        "position": "Jr. Full Stack Developer",
+        "location": "Dhaka, Bangladesh",
+        "duration": "OCT 2024 – DEC 2024",
+        "techStack": ["Supabase", "Deno", "Next.js"],
+        "description": "Contributed to both frontend and backend development, successfully transforming a Java-based system into a Deno-powered web application.",
+        "highlights": [
+          "Transformed a Java-based system into a modern Deno-powered web application",
+          "Deployed and maintained the project on Supabase, ensuring reliability and scalability",
+          "Addressed post-delivery issues and implemented client-requested changes leading to successful project completion"
+        ],
+        "featured": false,
+        "visible": true
+      },
+      {
+        "company": "Arena Web Security",
+        "position": "Jr. Backend Developer",
+        "location": "Dhaka, Bangladesh",
+        "duration": "AUG 2023 – NOV 2023",
+        "techStack": ["Python", "Django", "MySQL", "PowerShell"],
+        "description": "Worked on in-house projects including employee attendance and invoice generation systems.",
+        "highlights": [
+          "Created Employee attendance with invoice generation system",
+          "Designed database and APIs from scratch with no documentation",
+          "Worked on in-house security projects"
+        ],
+        "featured": false,
+        "visible": false,
+        "showInSeeMore": true
+      }
+    ]
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "categories": [
+      {
+        "name": "Team Projects",
+        "projects": [
+          {
+            "name": "TimeForge",
+            "type": "Team Project",
+            "tagline": "Event Management & Meeting Platform",
+            "thumbnail": "/project-thumbs/timeforge.png",
+            "description": "Comprehensive event and meeting management platform with Google Calendar integration and secure meeting hosting.",
+            "problem": "Difficulty in managing multiple event types and hosting secure meetings with controlled attendee access",
+            "solution": "Built a feature-rich platform with Google Calendar API integration, Stripe payments, and admin panel for seamless event management",
+            "techStack": ["React", "Express", "MongoDB", "Stripe", "Google Calendar", "Firebase"],
+            "features": [
+              "Create and manage multiple types of events",
+              "Host meetings with only allowed attendees",
+              "Feature-rich Admin panel for CRUD operations",
+              "Google Calendar integration for multi-platform support"
+            ],
+            "myRole": "Team Leader - Integrated Google Calendar API, implemented meeting hosting feature, distributed tasks among teammates",
+            "githubLink": {
+              "Repository": "https://github.com/huzaifa/timeforge"
+            },
+            "liveLink": "https://timeforge-demo.vercel.app",
+            "featured": true,
+            "visible": true
+          },
+          {
+            "name": "Neat-Site",
+            "type": "Team Project",
+            "tagline": "Salon Booking Platform",
+            "thumbnail": "/project-thumbs/neat-site.png",
+            "description": "An Uber-like platform for salon services, connecting clients with salons for easy appointment booking and management.",
+            "problem": "Clients struggle to find and book salon appointments, salon owners need better appointment management",
+            "solution": "Created a two-sided platform where clients can search and book appointments while salon owners manage their services and schedules",
+            "techStack": ["Django", "MySQL", "HTML", "CSS", "jQuery"],
+            "features": [
+              "Search and book appointments with any salon",
+              "Salon owner dashboard for managing appointments and services",
+              "Real-time availability checking",
+              "Service catalog management"
+            ],
+            "myRole": "Backend Developer - Designed and managed the database, created all necessary APIs",
+            "githubLink": {
+              "Repository": "https://github.com/huzaifa/neat-site"
+            },
+            "liveLink": "https://neat-site-demo.herokuapp.com",
+            "featured": true,
+            "visible": true
+          }
+        ]
+      },
+      {
+        "name": "Personal Projects",
+        "projects": [
+          {
+            "name": "SurveysSphere",
+            "type": "Personal Project",
+            "tagline": "Survey Creation & Management Platform",
+            "thumbnail": "/project-thumbs/surveys-sphere.png",
+            "description": "Full-featured survey platform with role-based access, premium subscriptions, and comprehensive admin controls.",
+            "problem": "Need for a flexible survey platform with user role management and monetization capabilities",
+            "solution": "Built a complete survey ecosystem with Stripe integration for premium features and Firebase authentication for secure access control",
+            "techStack": ["React", "Express", "MongoDB", "Stripe", "Firebase", "JWT", "Tailwind"],
+            "features": [
+              "Create and participate in surveys",
+              "Four types of user roles with different permissions",
+              "Premium subscription with Stripe integration",
+              "Admin dashboard for survey and user management"
+            ],
+            "githubLink": {
+              "Repository": "https://github.com/huzaifa/surveys-sphere"
+            },
+            "liveLink": "https://surveys-sphere.vercel.app",
+            "featured": true,
+            "visible": true
+          },
+          {
+            "name": "EduSphere",
+            "type": "Personal Project",
+            "tagline": "Educational Platform Backend API",
+            "thumbnail": "/project-thumbs/edusphere.png",
+            "description": "RESTful API for educational platform with complete CRUD operations, email functionality, and comprehensive API documentation.",
+            "problem": "Need for a robust, well-documented backend API for educational applications",
+            "solution": "Developed a fully documented API with Swagger UI, email integration via Resend, and validation using Zod",
+            "techStack": ["Express", "PostgreSQL", "JWT", "Zod", "Swagger", "Resend"],
+            "features": [
+              "Complete CRUD operations for all entities",
+              "Email notifications using Resend",
+              "Interactive API documentation with Swagger UI",
+              "Schema validation with Zod"
+            ],
+            "githubLink": {
+              "Repository": "https://github.com/huzaifa/edusphere"
+            },
+            "liveLink": "https://edusphere-api.railway.app",
+            "featured": true,
+            "visible": true
+          },
+          {
+            "name": "AssetTrackr",
+            "type": "Personal Project",
+            "tagline": "Company Asset Management System",
+            "thumbnail": "/project-thumbs/asset-trackr.png",
+            "description": "Asset tracking system for managing company devices and employee assignments.",
+            "problem": "Companies need efficient ways to track devices assigned to employees",
+            "solution": "Created a simple CRUD application to manage device inventory and employee assignments",
+            "techStack": ["React", "Django REST", "SQLite"],
+            "features": [
+              "Insert company device and employee information",
+              "Track company device assignments",
+              "Simple CRUD operations on data"
+            ],
+            "githubLink": {
+              "Repository": "https://github.com/huzaifa/asset-trackr"
+            },
+            "liveLink": "https://asset-trackr.netlify.app",
+            "featured": false,
+            "visible": false,
+            "showInSeeMore": true
+          }
+        ]
+      }
+    ]
+  },
+  "awards": {
+    "title": "Awards & Achievements",
+    "items": [
+      {
+        "title": "FinTech Start-Up of the Year 2025",
+        "organization": "3rd Bangladesh Fintech Awards",
+        "description": "Core developer of Sheba Pay, the winning platform",
+        "date": "2025",
+        "featured": true
+      },
+      {
+        "title": "FinTech Innovation of the Year (NBFI) - Honorable Mention",
+        "organization": "3rd Bangladesh Fintech Awards",
+        "description": "Backend developer for PSP Passthrough module",
+        "date": "2025",
+        "featured": true
+      },
+      {
+        "title": "Published Research Paper",
+        "organization": "Academic Publication",
+        "description": "DeepTestDroid: A Platform for Automated Application Testing Using Deep Learning",
+        "date": "2024",
+        "featured": true
+      },
+      {
+        "title": "Best Scrum Leader",
+        "organization": "Programming Hero - Batch 8 ENDGAME",
+        "description": "Recognized for exceptional team leadership and project management",
+        "date": "2024",
+        "featured": true
+      }
+    ],
+    "visible": true
+  },
+  "education": {
+    "title": "Education",
+    "degree": "Bachelor of Computer Science & Engineering",
+    "major": "Software Engineering",
+    "institution": "East West University",
+    "location": "Rampura, Dhaka",
+    "visible": false,
+    "showInSeeMore": true
+  },
+  "languages": {
+    "title": "Languages",
+    "items": [
+      {
+        "language": "English",
+        "proficiency": "Advanced"
+      },
+      {
+        "language": "Bengali",
+        "proficiency": "Native"
+      }
+    ],
+    "visible": false,
+    "showInSeeMore": true
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle": "I'm always open to discussing new projects, creative ideas, or opportunities.",
+    "email": "saadhuzaifa2497@gmail.com",
+    "phone": "+880 185-8914789",
+    "whatsapp": "https://wa.link/623ss0",
+    "location": "Dhaka, Bangladesh",
+    "socialLinks": {
+      "github": {
+        "url": "https://github.com/huzaifa",
+        "label": "GitHub"
+      },
+      "linkedin": {
+        "url": "https://linkedin.com/in/md-huzaifa",
+        "label": "LinkedIn"
+      },
+      "email": {
+        "url": "mailto:saadhuzaifa2497@gmail.com",
+        "label": "Email"
+      }
+    },
+    "availability": "Available for freelance and full-time opportunities"
+  },
+  "sectionOrder": [
+    "hero",
+    "about",
+    "skills",
+    "experience",
+    "projects",
+    "awards",
+    "contact"
+  ],
+  "navigation": {
+    "logo": "MH",
+    "links": [
+      { "label": "About", "href": "#about" },
+      { "label": "Skills", "href": "#skills" },
+      { "label": "Experience", "href": "#experience" },
+      { "label": "Projects", "href": "#projects" },
+      { "label": "Awards", "href": "#awards" },
+      { "label": "Contact", "href": "#contact" }
+    ]
+  }
+}
