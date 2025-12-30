@@ -44,6 +44,7 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     line-height: 1.6;
+    font-size: 16px;
   }
 
   a {
@@ -65,11 +66,11 @@
   }
 
   .section-title {
-    @apply text-2xl md:text-3xl font-bold mb-6 text-text-primary;
+    @apply text-3xl md:text-4xl font-bold mb-6 text-text-primary;
   }
 
   .section-subtitle {
-    @apply text-sm md:text-base text-text-secondary mb-8 max-w-2xl;
+    @apply text-base md:text-lg text-text-secondary mb-8 max-w-2xl;
   }
 
   /* Bento Card with Glassmorphism */
@@ -89,7 +90,7 @@
 
   /* Buttons */
   .btn {
-    @apply inline-flex items-center justify-center px-6 py-2.5 rounded-full font-medium transition-all duration-300 cursor-pointer border-none text-sm;
+    @apply inline-flex items-center justify-center px-6 py-2.5 rounded-full font-medium transition-all duration-300 cursor-pointer border-none text-base;
   }
 
   .btn-primary {
@@ -119,7 +120,7 @@
 
   /* Tags/Chips */
   .tag {
-    @apply inline-flex items-center gap-2 px-3 py-1.5 bg-bg-tertiary text-text-secondary rounded-full text-xs font-medium border border-border-color hover:border-accent-primary transition-all duration-200;
+    @apply inline-flex items-center gap-2 px-3 py-1.5 bg-bg-tertiary text-text-secondary rounded-full text-sm font-medium border border-border-color hover:border-accent-primary transition-all duration-200;
   }
 }
 
