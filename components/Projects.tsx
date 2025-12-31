@@ -12,7 +12,7 @@ export default function Projects() {
   const [imageErrors, setImageErrors] = useState<Record<string, boolean>>({});
 
   return (
-    <section id="projects" className="section bg-bg-secondary">
+    <section id="projects" className="section">
       <div className="container">
         <h2 className="section-title">{projects.title}</h2>
 

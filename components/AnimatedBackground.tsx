@@ -9,13 +9,15 @@ export default function AnimatedBackground() {
   const stars3Ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    // Generate random box-shadows for stars
+    // Generate random box-shadows for stars with rainbow colors
     const generateStars = (count: number) => {
       let shadows = '';
       for (let i = 0; i < count; i++) {
         const x = Math.floor(Math.random() * 2000);
         const y = Math.floor(Math.random() * 2000);
-        shadows += `${x}px ${y}px #FFF${i < count - 1 ? ', ' : ''}`;
+        const hue = Math.floor(Math.random() * 360);
+        const color = `hsl(${hue}, 100%, 70%)`;
+        shadows += `${x}px ${y}px ${color}${i < count - 1 ? ', ' : ''}`;
       }
       return shadows;
     };

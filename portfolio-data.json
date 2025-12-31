@@ -10,7 +10,7 @@
     "name": "MD. HUZAIFA",
     "title": "Software Engineer",
     "tagline": "Building scalable web applications with modern technologies",
-    "description": "Full-stack developer specializing in backend architectures, microservices, and seamless user experiences",
+    "description": "Software Engineer specializing in scalable backend systems, FinTech platforms, and microservices used by thousands of users. Core developer of award-winning payment solutions.",
     "photo": "/Huzaifa.png",
     "showPhoto": true,
     "primaryTech": ["NestJS", "React", "TypeScript", "Docker", "Microservices"],
@@ -33,12 +33,12 @@
   },
   "about": {
     "title": "About Me",
-    "summary": "Software Engineer with expertise in building scalable web applications and microservice architectures. Core developer at Sheba Platform Limited, contributing to award-winning FinTech products. Passionate about clean code, system design, and delivering high-impact solutions.",
+    "summary": "Core developer at Sheba Platform Limited contributing to award-winning FinTech products. Specialized in building scalable backend systems and microservice architectures that serve thousands of users daily.",
     "highlights": [
       "Core developer of Sheba Pay - FinTech Start-Up of the Year 2025",
       "Backend developer for award-recognized PSP Passthrough module",
-      "Full-cycle development experience across multiple tech stacks",
-      "Published research on automated application testing using deep learning"
+      "Published research on automated application testing using deep learning",
+      "Full-cycle development across payment systems, microservices & cloud infrastructure"
     ],
     "focus": [
       "Backend Architecture & Microservices",

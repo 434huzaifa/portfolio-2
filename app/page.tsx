@@ -1,6 +1,7 @@
 'use client';
 
 import Navigation from '@/components/Navigation';
+import BottomNavigation from '@/components/BottomNavigation';
 import Hero from '@/components/Hero';
 import About from '@/components/About';
 import Skills from '@/components/Skills';
@@ -74,12 +75,12 @@ export default function Home() {
   }
 
   const data = validationResult.data!;
-
   return (
     <ThemeProvider>
       <AnimatedBackground />
       <Navigation />
-      <main>
+      <BottomNavigation />
+      <main className="pb-20 md:pb-0">
         {data.sectionOrder.map((section: string) => {
           switch (section) {
             case 'hero':

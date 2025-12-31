@@ -5,7 +5,7 @@ export default function Footer() {
   const { siteMetadata } = portfolioData;
 
   return (
-    <footer className="bg-bg-primary border-t border-border-color py-6 mt-12">
+    <footer className="bg-bg-primary border-t border-border-color py-6 pb-20 md:pb-6">
       <div className="container">
         <div className="text-center">
           <p className="text-text-secondary mb-1 text-xs">

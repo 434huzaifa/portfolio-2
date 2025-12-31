@@ -77,5 +77,6 @@
 /* Light theme - lighter starfield */
 [data-theme='light'] .starsBackground {
   background: radial-gradient(ellipse at bottom, #e8eef5 0%, #b8c6db 100%);
-  opacity: 0.3;
+  /* background: radial-gradient(ellipse at bottom, #e8eef5 0%, #b8c6db 100%); */
+  /* opacity: 0.3; */
 }

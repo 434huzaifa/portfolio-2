@@ -117,6 +117,7 @@ const AwardSchema = z.object({
 const AwardsSchema = z.object({
   title: z.string().min(1, 'Awards title is required'),
   items: z.array(AwardSchema),
+  visible: z.boolean().optional(),
 });
 
 const EducationSchema = z.object({

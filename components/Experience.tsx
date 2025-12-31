@@ -12,7 +12,7 @@ export default function Experience() {
   const displayPositions = showAll ? experience.positions : experience.positions.slice(0, 1);
 
   return (
-    <section id="experience" className="section bg-bg-secondary">
+    <section id="experience" className="section">
       <div className="container">
         <h2 className="section-title">{experience.title}</h2>
 
