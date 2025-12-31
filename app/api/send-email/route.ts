@@ -6,19 +6,17 @@ export async function POST(request: NextRequest) {
   
   try {
     const body = await request.json();
-    const { firstName, lastName, email, phone, zipCode, message } = body;
+    const { name, email, subject, message } = body;
 
     console.log('📨 Request received:', {
-      firstName,
-      lastName,
+      name,
       email,
-      phone: phone || 'Not provided',
-      zipCode: zipCode || 'Not provided',
+      subject,
       messageLength: message?.length || 0
     });
 
     // Validate required fields
-    if (!firstName || !lastName || !email || !message) {
+    if (!name || !email || !subject || !message) {
       console.log('❌ Validation failed: Missing required fields');
       return NextResponse.json(
         { error: 'Missing required fields' },
@@ -54,11 +52,9 @@ export async function POST(request: NextRequest) {
       serviceId,
       templateId,
       {
-        from_first_name: firstName,
-        from_last_name: lastName,
-        from_email: email,
-        from_phone: phone || 'Not provided',
-        from_zipcode: zipCode || 'Not provided',
+        user_name: name,
+        user_email: email,
+        subject: subject,
         message: message,
       },
       {
