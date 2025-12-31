@@ -6,11 +6,9 @@ import portfolioData from '@/portfolio-data.json';
 export default function Contact() {
   const { contact } = portfolioData;
   const [formData, setFormData] = useState({
-    firstName: '',
-    lastName: '',
+    name: '',
     email: '',
-    phone: '',
-    zipCode: '',
+    subject: '',
     message: ''
   });
   const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle');
@@ -29,11 +27,9 @@ export default function Contact() {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          firstName: formData.firstName,
-          lastName: formData.lastName,
+          name: formData.name,
           email: formData.email,
-          phone: formData.phone,
-          zipCode: formData.zipCode,
+          subject: formData.subject,
           message: formData.message,
         }),
       });
@@ -43,11 +39,9 @@ export default function Contact() {
       if (response.ok && data.success) {
         setStatus('success');
         setFormData({
-          firstName: '',
-          lastName: '',
+          name: '',
           email: '',
-          phone: '',
-          zipCode: '',
+          subject: '',
           message: ''
         });
       } else {
@@ -165,27 +159,16 @@ export default function Contact() {
               </h3>
               
               <form onSubmit={handleSubmit} className="space-y-4">
-                {/* First Name & Last Name */}
-                <div className="grid grid-cols-2 gap-3">
-                  <input
-                    type="text"
-                    name="firstName"
-                    placeholder="First Name"
-                    value={formData.firstName}
-                    onChange={handleChange}
-                    required
-                    className="w-full px-4 py-2.5 text-sm bg-bg-tertiary border border-border-color rounded-xl text-text-primary placeholder-text-tertiary focus:outline-none focus:border-accent-primary transition-all"
-                  />
-                  <input
-                    type="text"
-                    name="lastName"
-                    placeholder="Last Name"
-                    value={formData.lastName}
-                    onChange={handleChange}
-                    required
-                    className="w-full px-4 py-2.5 text-sm bg-bg-tertiary border border-border-color rounded-xl text-text-primary placeholder-text-tertiary focus:outline-none focus:border-accent-primary transition-all"
-                  />
-                </div>
+                {/* Name */}
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your Name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  required
+                  className="w-full px-4 py-2.5 text-sm bg-bg-tertiary border border-border-color rounded-xl text-text-primary placeholder-text-tertiary focus:outline-none focus:border-accent-primary transition-all"
+                />
 
                 {/* Email */}
                 <input
@@ -198,25 +181,16 @@ export default function Contact() {
                   className="w-full px-4 py-2.5 text-sm bg-bg-tertiary border border-border-color rounded-xl text-text-primary placeholder-text-tertiary focus:outline-none focus:border-accent-primary transition-all"
                 />
 
-                {/* Phone & Zip Code */}
-                <div className="grid grid-cols-2 gap-3">
-                  <input
-                    type="tel"
-                    name="phone"
-                    placeholder="Phone"
-                    value={formData.phone}
-                    onChange={handleChange}
-                    className="w-full px-4 py-2.5 text-sm bg-bg-tertiary border border-border-color rounded-xl text-text-primary placeholder-text-tertiary focus:outline-none focus:border-accent-primary transition-all"
-                  />
-                  <input
-                    type="text"
-                    name="zipCode"
-                    placeholder="Zip Code"
-                    value={formData.zipCode}
-                    onChange={handleChange}
-                    className="w-full px-4 py-2.5 text-sm bg-bg-tertiary border border-border-color rounded-xl text-text-primary placeholder-text-tertiary focus:outline-none focus:border-accent-primary transition-all"
-                  />
-                </div>
+                {/* Subject */}
+                <input
+                  type="text"
+                  name="subject"
+                  placeholder="Subject"
+                  value={formData.subject}
+                  onChange={handleChange}
+                  required
+                  className="w-full px-4 py-2.5 text-sm bg-bg-tertiary border border-border-color rounded-xl text-text-primary placeholder-text-tertiary focus:outline-none focus:border-accent-primary transition-all"
+                />
 
                 {/* Message */}
                 <textarea
@@ -225,7 +199,7 @@ export default function Contact() {
                   value={formData.message}
                   onChange={handleChange}
                   required
-                  rows={4}
+                  rows={5}
                   className="w-full px-4 py-2.5 text-sm bg-bg-tertiary border border-border-color rounded-xl text-text-primary placeholder-text-tertiary focus:outline-none focus:border-accent-primary transition-all resize-none"
                 />
 
