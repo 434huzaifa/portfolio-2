@@ -1,10 +1,40 @@
 import { BlogPostComponent } from '@/components/BlogPostComponent'
 import type { Metadata } from 'next'
+import portfolioData from '@/portfolio-data.json'
+
+const postSlug = 'mastering-recurring-schedules-rrule'
+const postUrl = `${portfolioData.siteMetadata.siteUrl}/blog/${postSlug}`
 
 export const metadata: Metadata = {
   title: 'Mastering Recurring Schedules with RRule - Blog',
-  description: 'A 4-minute primer on RRule with a live tester link to craft and validate recurring schedules fast.',
-  keywords: ['RRule', 'Recurring Schedules', 'Calendar', 'Scheduling', 'TypeScript', 'React'],
+  description: 'A 4-minute primer on RRule (RFC 5545) with live tester links, patterns to copy, and practical tips for implementing recurring schedules in your web applications.',
+  keywords: ['RRule', 'Recurring Schedules', 'Calendar', 'Scheduling', 'TypeScript', 'React', 'RFC 5545', 'rrule.js'],
+  authors: [{ name: 'MD. Huzaifa' }],
+  openGraph: {
+    title: 'Mastering Recurring Schedules with RRule',
+    description: 'Learn how to implement recurring schedules using RRule with practical examples and live testers.',
+    type: 'article',
+    locale: 'en_US',
+    url: postUrl,
+    siteName: 'MD. Huzaifa Blog',
+    publishedTime: '2026-01-04T00:00:00Z',
+    authors: ['MD. Huzaifa'],
+    tags: ['RRule', 'Scheduling', 'Web Development', 'JavaScript', 'TypeScript'],
+    images: [
+      {
+        url: `${portfolioData.siteMetadata.siteUrl}/blog-thumbs/rrule-cover.png`,
+        width: 1200,
+        height: 630,
+        alt: 'Mastering Recurring Schedules with RRule',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Mastering Recurring Schedules with RRule',
+    description: 'A 4-minute primer on RRule with live tester links and practical examples.',
+    images: [`${portfolioData.siteMetadata.siteUrl}/blog-thumbs/rrule-cover.png`],
+  },
 }
 
 const tableOfContents = [
@@ -25,6 +55,7 @@ export default function RRuleBlogPost() {
       readTime="4 min read"
       category="Web Development"
       author="MD. Huzaifa"
+      authorLink="https://devhuzaifa.netlify.app/"
       toc={tableOfContents}
       content={
         <>
@@ -75,6 +106,20 @@ RRULE:FREQ=WEEKLY;INTERVAL=2;BYDAY=TU,TH;COUNT=10`}</code>
           <h2 id="conclusion">Conclusion</h2>
           <p>
             RRule removes guesswork from recurring schedules. Start simple, validate with the live tester, and always show users what will happen before you create events.
+          </p>
+
+          <h2>Real-World Example: ShiftCare</h2>
+          <p>
+            A practical application of RRule is <a href="https://shift-care-vert.vercel.app" target="_blank" rel="noreferrer">ShiftCare</a>, a staff and booking management system. It uses RRule extensively to:
+          </p>
+          <ul>
+            <li>Generate recurring shifts for staff members across months</li>
+            <li>Auto-detect conflicts between overlapping bookings</li>
+            <li>Provide a calendar view with color-coded shift types</li>
+            <li>Enable users to edit recurring patterns or individual occurrences</li>
+          </ul>
+          <p>
+            <a href="https://github.com/434huzaifa/shift-care" target="_blank" rel="noreferrer">ShiftCare on GitHub</a> showcases how to integrate RRule into a production scheduling system with Prisma, Next.js, and ShadCN UI.
           </p>
         </>
       }

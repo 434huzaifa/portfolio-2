@@ -36,7 +36,7 @@ const blogPosts: BlogPost[] = [
     readTime: '3 min read',
     category: 'Product & Engineering',
     slug: 'vibe-coding-wallet',
-    image: '/blog-thumbs/vibe-gaming.png',
+    image: '/blog-thumbs/vibe-coding.webp',
   },
 ]
 
@@ -52,6 +52,11 @@ function formatDate(dateString: string): string {
 export default function BlogPage() {
   return (
     <main className={styles.container}>
+      <div className={styles.backNav}>
+        <Link href="/" className={styles.backButton}>
+          ← Back to Profile
+        </Link>
+      </div>
       <div className={styles.header}>
         <h1 className={styles.title}>Technical Blog</h1>
         <p className={styles.subtitle}>

@@ -1,11 +1,41 @@
 import { BlogPostComponent } from '@/components/BlogPostComponent'
 import type { Metadata } from 'next'
+import portfolioData from '@/portfolio-data.json'
+
+const postSlug = 'vibe-coding-wallet'
+const postUrl = `${portfolioData.siteMetadata.siteUrl}/blog/${postSlug}`
 
 export const metadata: Metadata = {
   title: 'Vibe Coding Wallet: Building a playful payments experience - Blog',
   description:
-    'A 3-minute recap of designing and shipping the Vibe Coding Fake Wallet project with a focus on onboarding, trust, and delight.',
-  keywords: ['Vibe Coding', 'Fake Wallet', 'Product Design', 'React', 'TypeScript'],
+    'Learn from building a fake wallet demo for Vibe Coding: UI/UX design patterns, trust cues, delightful microcopy, and rapid prototyping strategies for payment applications.',
+  keywords: ['Vibe Coding', 'Fake Wallet', 'Product Design', 'React', 'TypeScript', 'Next.js', 'UI/UX', 'Payment Systems'],
+  authors: [{ name: 'MD. Huzaifa' }],
+  openGraph: {
+    title: 'Vibe Coding Wallet: Building a playful payments experience',
+    description: 'Design and engineering insights from building the Vibe Coding fake wallet payment demo.',
+    type: 'article',
+    locale: 'en_US',
+    url: postUrl,
+    siteName: 'MD. Huzaifa Blog',
+    publishedTime: '2026-01-04T00:00:00Z',
+    authors: ['MD. Huzaifa'],
+    tags: ['Product Design', 'UI/UX', 'Payment Systems', 'React', 'Next.js'],
+    images: [
+      {
+        url: `${portfolioData.siteMetadata.siteUrl}/blog-thumbs/vibe-coding.webp`,
+        width: 1200,
+        height: 630,
+        alt: 'Vibe Coding Wallet: Building a playful payments experience',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Vibe Coding Wallet: Building a playful payments experience',
+    description: 'Design patterns and lessons from building a fake wallet demo.',
+    images: [`${portfolioData.siteMetadata.siteUrl}/blog-thumbs/vibe-coding.webp`],
+  },
 }
 
 const tableOfContents = [

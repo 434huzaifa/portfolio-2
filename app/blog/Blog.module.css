@@ -4,6 +4,23 @@
   padding: 3rem 1.5rem;
 }
 
+.backNav {
+  margin-bottom: 2rem;
+}
+
+.backButton {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  color: var(--primary, #3b82f6);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.backButton:hover {
+  color: var(--primary-dark, #2563eb);
+}
+
 .header {
   text-align: center;
   margin-bottom: 3rem;

@@ -10,6 +10,7 @@ interface BlogPostContent {
   readTime: string
   category: string
   author: string
+  authorLink?: string
   toc: Array<{ id: string; title: string; level: number }>
   content: React.ReactNode
 }
@@ -30,15 +31,21 @@ export function BlogPostComponent({
   readTime,
   category,
   author,
+  authorLink,
   toc,
   content,
 }: BlogPostContent) {
   return (
     <article className={styles.container}>
       <header className={styles.header}>
-        <Link href="/blog" className={styles.backLink}>
-          ← Back to Blog
-        </Link>
+        <div className={styles.backLinks}>
+          <Link href="/" className={styles.backLink}>
+            ← Back to Profile
+          </Link>
+          <Link href="/blog" className={styles.backLink}>
+            ← Back to Blog
+          </Link>
+        </div>
         <div className={styles.meta}>
           <span className={styles.category}>{category}</span>
           <span className={styles.readTime}>{readTime}</span>
@@ -51,7 +58,13 @@ export function BlogPostComponent({
         <div className={styles.authorInfo}>
           <div className={styles.avatar}>MH</div>
           <div>
-            <p className={styles.authorName}>{author}</p>
+            {authorLink ? (
+              <Link href={authorLink}>
+                <p className={styles.authorName}>{author}</p>
+              </Link>
+            ) : (
+              <p className={styles.authorName}>{author}</p>
+            )}
             <p className={styles.authorRole}>Software Engineer</p>
           </div>
         </div>

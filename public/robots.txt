@@ -1,0 +1,13 @@
+# Allow all bots to crawl the site
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://devhuzaifa.netlify.app/sitemap.xml
+Sitemap: https://mdhuzaifa.dev/sitemap.xml
+
+# Disallow admin routes if any
+Disallow: /admin
+
+# Crawl delay (optional, adjust as needed)
+Crawl-delay: 1
