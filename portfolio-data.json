@@ -190,7 +190,7 @@
             "name": "TimeForge",
             "type": "Team Project",
             "tagline": "Event Management & Meeting Platform",
-            "thumbnail": "/project-thumbs/timeforge.png",
+            "thumbnail": "/project-thumbs/timeforge.webp",
             "description": "Comprehensive event and meeting management platform with Google Calendar integration and secure meeting hosting.",
             "problem": "Difficulty in managing multiple event types and hosting secure meetings with controlled attendee access",
             "solution": "Built a feature-rich platform with Google Calendar API integration, Stripe payments, and admin panel for seamless event management",
@@ -203,9 +203,10 @@
             ],
             "myRole": "Team Leader - Integrated Google Calendar API, implemented meeting hosting feature, distributed tasks among teammates",
             "githubLink": {
-              "Repository": "https://github.com/huzaifa/timeforge"
+              "Client": "https://github.com/CareerNavigators/timeforge-client",
+              "Server": "https://github.com/CareerNavigators/timeforge-server"
             },
-            "liveLink": "https://timeforge-demo.vercel.app",
+            "liveLink": "https://timeforge.vercel.app/",
             "featured": true,
             "visible": true
           },
@@ -226,9 +227,8 @@
             ],
             "myRole": "Backend Developer - Designed and managed the database, created all necessary APIs",
             "githubLink": {
-              "Repository": "https://github.com/huzaifa/neat-site"
+              "Repository": "https://github.com/434huzaifa/Neat-Site"
             },
-            "liveLink": "https://neat-site-demo.herokuapp.com",
             "featured": true,
             "visible": true
           }
@@ -237,28 +237,6 @@
       {
         "name": "Personal Projects",
         "projects": [
-          {
-            "name": "SurveysSphere",
-            "type": "Personal Project",
-            "tagline": "Survey Creation & Management Platform",
-            "thumbnail": "/project-thumbs/surveys-sphere.png",
-            "description": "Full-featured survey platform with role-based access, premium subscriptions, and comprehensive admin controls.",
-            "problem": "Need for a flexible survey platform with user role management and monetization capabilities",
-            "solution": "Built a complete survey ecosystem with Stripe integration for premium features and Firebase authentication for secure access control",
-            "techStack": ["React", "Express", "MongoDB", "Stripe", "Firebase", "JWT", "Tailwind"],
-            "features": [
-              "Create and participate in surveys",
-              "Four types of user roles with different permissions",
-              "Premium subscription with Stripe integration",
-              "Admin dashboard for survey and user management"
-            ],
-            "githubLink": {
-              "Repository": "https://github.com/huzaifa/surveys-sphere"
-            },
-            "liveLink": "https://surveys-sphere.vercel.app",
-            "featured": true,
-            "visible": true
-          },
           {
             "name": "EduSphere",
             "type": "Personal Project",
@@ -277,8 +255,30 @@
             "githubLink": {
               "Repository": "https://github.com/huzaifa/edusphere"
             },
-            "liveLink": "https://edusphere-api.railway.app",
+            "liveLink": "https://edu-sphere-yqk2.vercel.app/",
             "featured": true,
+            "visible": true
+          },
+          {
+            "name": "Fake Wallet",
+            "type": "Personal Project",
+            "tagline": "Cryptocurrency Wallet Interface",
+            "thumbnail": "/project-thumbs/fakewallet.webp",
+            "description": "A simulated cryptocurrency wallet interface for learning and demonstration purposes.",
+            "problem": "Need for a safe environment to understand cryptocurrency wallet interfaces without real assets",
+            "solution": "Built a demo wallet application that simulates real wallet functionality for educational purposes",
+            "techStack": ["React", "JavaScript", "CSS"],
+            "features": [
+              "Simulated wallet interface",
+              "Transaction history tracking",
+              "Portfolio visualization",
+              "User-friendly dashboard"
+            ],
+            "githubLink": {
+              "Repository": "https://github.com/434huzaifa/fake-wallet"
+            },
+            "liveLink": "https://fake-wallet.netlify.app/",
+            "featured": false,
             "visible": true
           },
           {
@@ -296,12 +296,37 @@
               "Simple CRUD operations on data"
             ],
             "githubLink": {
-              "Repository": "https://github.com/huzaifa/asset-trackr"
+              "Client": "https://github.com/434huzaifa/AssetTrackr-Frontend",
+              "Server": "https://github.com/434huzaifa/AssetTrackr-backend"
             },
-            "liveLink": "https://asset-trackr.netlify.app",
+            "liveLink": "https://asset-trackr-frontend-mauve.vercel.app/login",
             "featured": false,
             "visible": false,
             "showInSeeMore": true
+          },
+          {
+            "name": "ShiftCare",
+            "type": "Personal Project",
+            "tagline": "Staff & Booking Management System",
+            "thumbnail": "/project-thumbs/shift-care.png",
+            "description": "Modern admin portal for managing staff members and their booking schedules with calendar views and conflict detection.",
+            "problem": "Staff scheduling systems need efficient booking management, conflict prevention, and recurring schedule support",
+            "solution": "Built a comprehensive admin portal with calendar views, RRule generator for recurring bookings, and automatic conflict detection",
+            "techStack": ["Next.js", "TypeScript", "Prisma", "SQLite", "ShadCN UI", "Tailwind CSS", "RRule"],
+            "features": [
+              "Staff and carer management with profile images",
+              "Booking scheduler with one-time and recurring shifts",
+              "Monthly calendar view with color-coded shifts",
+              "Automatic conflict detection and prevention",
+              "RRule generator for complex recurrence patterns",
+              "Real-time pricing calculation and special instructions"
+            ],
+            "githubLink": {
+              "Repository": "https://github.com/434huzaifa/shift-care"
+            },
+            "featured": true,
+            "liveLink":"https://shift-care-vert.vercel.app",
+            "visible": true
           }
         ]
       }

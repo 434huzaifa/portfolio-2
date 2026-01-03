@@ -93,6 +93,11 @@ export default function Navigation() {
               </a>
             </li>
           ))}
+          <li>
+            <a href="/blog" className="text-sm text-text-secondary font-medium hover:text-accent-primary transition-colors">
+              Blog
+            </a>
+          </li>
         </ul>
 
         <div className="flex items-center gap-3">
@@ -213,6 +218,15 @@ export default function Navigation() {
                   </a>
                 </li>
               ))}
+              <li>
+                <a 
+                  href="/blog" 
+                  onClick={() => setIsMenuOpen(false)}
+                  className="block py-3 px-5 text-sm text-text-secondary font-medium hover:bg-bg-secondary hover:text-accent-primary transition-colors"
+                >
+                  Blog
+                </a>
+              </li>
             </ul>
           </div>
         )}

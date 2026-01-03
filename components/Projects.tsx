@@ -17,7 +17,7 @@ export default function Projects() {
         <h2 className="section-title">{projects.title}</h2>
 
         {projects.categories.map((category) => {
-          const visibleProjects = getVisibleItems(category.projects as Project[]);
+          const visibleProjects = getVisibleItems(category.projects as unknown as Project[]);
           const displayProjects = showAll ? category.projects : visibleProjects;
 
           return (
@@ -95,14 +95,16 @@ export default function Projects() {
                             {label}
                           </a>
                         ))}
-                        <a 
-                          href={project.liveLink} 
-                          target="_blank" 
-                          rel="noopener noreferrer"
-                          className="flex-1 text-center px-3 py-2 rounded-full font-medium text-xs transition-all bg-accent-primary text-white hover:bg-accent-secondary"
-                        >
-                          Demo
-                        </a>
+                        {project.liveLink && (
+                          <a 
+                            href={project.liveLink} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="flex-1 text-center px-3 py-2 rounded-full font-medium text-xs transition-all bg-accent-primary text-white hover:bg-accent-secondary"
+                          >
+                            Demo
+                          </a>
+                        )}
                       </div>
                     </div>
                   </div>
@@ -113,7 +115,7 @@ export default function Projects() {
         })}
 
         {projects.categories.some(cat => 
-          (cat.projects as Project[]).some(proj => proj.showInSeeMore)
+          (cat.projects as unknown as Project[]).some(proj => proj.showInSeeMore)
         ) && (
           <div className="text-center mt-8">
             <button 

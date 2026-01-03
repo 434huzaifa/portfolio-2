@@ -82,7 +82,7 @@ export interface Project {
   features: string[];
   myRole?: string;
   githubLink: { [key: string]: string };
-  liveLink: string;
+  liveLink?: string;
   featured: boolean;
   visible?: boolean;
   showInSeeMore?: boolean;

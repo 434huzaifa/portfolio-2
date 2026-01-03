@@ -87,7 +87,7 @@ const ProjectSchema = z.object({
   features: z.array(z.string()),
   myRole: z.string().optional(),
   githubLink: z.record(z.string(), z.string()),
-  liveLink: z.string().min(1, 'Live link is required'),
+  liveLink: z.string().min(1, 'Live link must be a valid URL').optional(),
   featured: z.boolean(),
   visible: z.boolean().optional(),
   showInSeeMore: z.boolean().optional(),
