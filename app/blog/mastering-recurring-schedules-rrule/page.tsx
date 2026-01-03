@@ -127,7 +127,7 @@ console.log(rule.toText()) // "every week on Monday, Wednesday, 8 times"`}</code
 
           <h2 id="patterns">Patterns to Copy</h2>
           <pre>
-            <code className="language-shell !border-none !text-blue-500">{`// Weekdays until year-end
+            <code className="!border-none !text-blue-500">{`// Weekdays until year-end
 RRULE:FREQ=DAILY;BYDAY=MO,TU,WE,TH,FR;UNTIL=20261231
 
 // First Monday of every month (6 times)

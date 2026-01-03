@@ -11,7 +11,6 @@ import Prism from "prismjs";
 // language support
 import "prismjs/components/prism-javascript";
 import "prismjs/components/prism-typescript";
-import "prismjs/components/prism-shell";
 
 interface BlogPost {
   id: string;
