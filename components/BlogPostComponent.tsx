@@ -1,7 +1,15 @@
 'use client'
 
 import Link from 'next/link'
+import { useEffect } from 'react'
+import Prism from 'prismjs'
+import 'prismjs/components/prism-javascript'
+import 'prismjs/components/prism-typescript'
+import 'prismjs/themes/prism-tomorrow.css'
 import styles from './BlogPost.module.css'
+import { ThemeProvider } from '@/contexts/ThemeContext'
+import DraggableThemeToggle from '@/components/DraggableThemeToggle'
+import AnimatedBackground from '@/components/AnimatedBackground'
 
 interface BlogPostContent {
   title: string
@@ -35,9 +43,16 @@ export function BlogPostComponent({
   toc,
   content,
 }: BlogPostContent) {
+  useEffect(() => {
+    Prism.highlightAll()
+  }, [])
+
   return (
-    <article className={styles.container}>
-      <header className={styles.header}>
+    <ThemeProvider>
+      <AnimatedBackground />
+      <DraggableThemeToggle />
+      <article className={styles.container}>
+        <header className={styles.header}>
         <div className={styles.backLinks}>
           <Link href="/" className={styles.backLink}>
             ← Back to Profile
@@ -122,5 +137,6 @@ export function BlogPostComponent({
         </div>
       </footer>
     </article>
+    </ThemeProvider>
   )
 }

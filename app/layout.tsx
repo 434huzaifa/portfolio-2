@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import portfolioData from '@/portfolio-data.json';
-
+import "prismjs/themes/prism-tomorrow.css";
 export const metadata: Metadata = {
   title: portfolioData.siteMetadata.title,
   description: portfolioData.siteMetadata.description,
