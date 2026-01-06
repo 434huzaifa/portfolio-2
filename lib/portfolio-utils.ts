@@ -229,3 +229,20 @@ export function getVisibleItems<T extends { visible?: boolean }>(items: T[]): T[
 export function getSeeMoreItems<T extends { showInSeeMore?: boolean }>(items: T[]): T[] {
   return items.filter(item => item.showInSeeMore === true);
 }
+
+export const getIconUrl = (icon: string | undefined) => {
+    if (!icon) return null;
+    
+    // If icon starts with http/https, it's an external URL
+    if (icon.startsWith('http://') || icon.startsWith('https://')) {
+      return icon;
+    }
+    
+    // If icon starts with /, it's a local file path
+    if (icon.startsWith('/')) {
+      return icon;
+    }
+    
+    // Otherwise, use skill-icons from GitHub
+    return `https://skillicons.dev/icons?i=${icon}`;
+  };

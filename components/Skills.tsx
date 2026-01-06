@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import portfolioData from '@/portfolio-data.json5';
-import { getVisibleItems } from '@/lib/portfolio-utils';
+import { getIconUrl, getVisibleItems } from '@/lib/portfolio-utils';
 import Image from 'next/image';
 
 export default function Skills() {
@@ -12,22 +12,22 @@ export default function Skills() {
   const visibleCategories = getVisibleItems(skills.categories);
   const displayCategories = showAll ? skills.categories : visibleCategories;
 
-  const getIconUrl = (icon: string | undefined) => {
-    if (!icon) return null;
+  // const getIconUrl = (icon: string | undefined) => {
+  //   if (!icon) return null;
     
-    // If icon starts with http/https, it's an external URL
-    if (icon.startsWith('http://') || icon.startsWith('https://')) {
-      return icon;
-    }
+  //   // If icon starts with http/https, it's an external URL
+  //   if (icon.startsWith('http://') || icon.startsWith('https://')) {
+  //     return icon;
+  //   }
     
-    // If icon starts with /, it's a local file path
-    if (icon.startsWith('/')) {
-      return icon;
-    }
+  //   // If icon starts with /, it's a local file path
+  //   if (icon.startsWith('/')) {
+  //     return icon;
+  //   }
     
-    // Otherwise, use skill-icons from GitHub
-    return `https://skillicons.dev/icons?i=${icon}`;
-  };
+  //   // Otherwise, use skill-icons from GitHub
+  //   return `https://skillicons.dev/icons?i=${icon}`;
+  // };
 
   return (
     <section id="skills" className="section bg-bg-primary">

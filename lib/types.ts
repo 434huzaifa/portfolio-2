@@ -63,6 +63,7 @@ export interface Position {
   featured: boolean;
   visible?: boolean;
   showInSeeMore?: boolean;
+  icon?:string|null|undefined
 }
 
 export interface Experience {
