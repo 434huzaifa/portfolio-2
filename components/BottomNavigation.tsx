@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { useTheme } from '@/contexts/ThemeContext';
 import { MdAccessibility } from 'react-icons/md';
-import portfolioData from '@/portfolio-data.json';
+import portfolioData from '@/portfolio-data.json5';
 
 export default function BottomNavigation() {
   const { theme, toggleTheme } = useTheme();

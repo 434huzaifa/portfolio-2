@@ -7,7 +7,7 @@ Your SEO-friendly, Next.js-powered portfolio website is now set up and running a
 
 ## 📁 What Was Created
 
-### 1. **JSON Content File** (`portfolio-data.json`)
+### 1. **JSON Content File** (`portfolio-data.json5`)
    - Contains ALL your portfolio content from profile.txt
    - Includes section ordering configuration
    - Controls visibility of items (visible/showInSeeMore)
@@ -37,13 +37,13 @@ Your SEO-friendly, Next.js-powered portfolio website is now set up and running a
 4. Click "See More" buttons to reveal hidden content
 
 ### Edit Your Content
-1. Open `portfolio-data.json`
+1. Open `portfolio-data.json5`
 2. Update any text, links, or information
 3. Save the file
 4. The page auto-refreshes with changes!
 
 ### Customize Visibility
-In `portfolio-data.json`, control what shows:
+In `portfolio-data.json5`, control what shows:
 ```json
 {
   "visible": true,        // Shows immediately
@@ -52,7 +52,7 @@ In `portfolio-data.json`, control what shows:
 ```
 
 ### Change Section Order
-Edit the `sectionOrder` array in `portfolio-data.json`:
+Edit the `sectionOrder` array in `portfolio-data.json5`:
 ```json
 "sectionOrder": [
   "hero",
@@ -75,7 +75,7 @@ Edit CSS variables in `app/globals.css`:
 
 ## 📝 Important: Update These Dummy Links!
 
-Replace these placeholder links in `portfolio-data.json`:
+Replace these placeholder links in `portfolio-data.json5`:
 
 1. **Social Links** (lines 17-21, 181-195)
    ```json
@@ -203,7 +203,7 @@ npm run lint    # Check for code issues
 ## 📚 Files You Can Edit
 
 ### Content:
-- `portfolio-data.json` - **MAIN FILE** - All your content
+- `portfolio-data.json5` - **MAIN FILE** - All your content
 
 ### Styling:
 - `app/globals.css` - Colors, fonts, global styles

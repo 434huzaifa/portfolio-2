@@ -1,6 +1,6 @@
 import { BlogPostComponent } from "@/components/BlogPostComponent";
 import type { Metadata } from "next";
-import portfolioData from "@/portfolio-data.json";
+import portfolioData from "@/portfolio-data.json5";
 
 const postSlug = "mastering-recurring-schedules-rrule";
 const postUrl = `${portfolioData.siteMetadata.siteUrl}/blog/${postSlug}`;

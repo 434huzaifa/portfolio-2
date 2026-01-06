@@ -123,7 +123,7 @@ npm run lint
 1. **Add cover images** to blog posts for better visual appeal
 2. **Write detailed TOC** for better SEO and UX
 3. **Use code examples** to make content more valuable
-4. **Update portfolio-data.json** if you link to blog posts
+4. **Update portfolio-data.json5** if you link to blog posts
 5. **Monitor analytics** to see what readers like
 
 ## 🔗 Navigation

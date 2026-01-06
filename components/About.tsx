@@ -1,4 +1,4 @@
-import portfolioData from '@/portfolio-data.json';
+import portfolioData from '@/portfolio-data.json5';
 
 export default function About() {
   const { about } = portfolioData;

@@ -29,7 +29,7 @@ The system validates:
 ```
 ⚠️ Portfolio Data Validation Errors
 
-There are 3 issue(s) with your portfolio data. Please fix the following errors in portfolio-data.json:
+There are 3 issue(s) with your portfolio data. Please fix the following errors in portfolio-data.json5:
 
 1. hero → socialLinks → github: GitHub URL must be valid
 2. projects → categories → 0 → projects → 0 → techStack: At least one tech stack item is required
@@ -149,7 +149,7 @@ These fields can be omitted:
 
 If you're stuck:
 1. Check the browser console for detailed Zod validation output
-2. Look at the example `portfolio-data.json` for proper structure
+2. Look at the example `portfolio-data.json5` for proper structure
 3. Compare your data structure with the TypeScript types in `lib/types.ts`
 4. Review the Zod schemas in `lib/portfolio-utils.ts`
 

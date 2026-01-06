@@ -1,5 +1,5 @@
 import type { MetadataRoute } from 'next'
-import portfolioData from '@/portfolio-data.json'
+import portfolioData from '@/portfolio-data.json5'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = portfolioData.siteMetadata.siteUrl

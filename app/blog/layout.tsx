@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import portfolioData from '@/portfolio-data.json'
+import portfolioData from '@/portfolio-data.json5'
 
 export const metadata: Metadata = {
   title: 'Blog - MD. Huzaifa | Software Engineering & Web Development Articles',

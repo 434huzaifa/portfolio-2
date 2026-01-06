@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import portfolioData from '@/portfolio-data.json';
+import portfolioData from '@/portfolio-data.json5';
 import { getVisibleItems } from '@/lib/portfolio-utils';
 import { Project } from '@/lib/types';
 import Image from 'next/image';
@@ -22,7 +22,7 @@ export default function Projects() {
 
           return (
             <div key={category.name} className="mb-12">
-              <h3 className="text-lg font-semibold text-text-primary mb-4">
+              <h3 className="text-lg font-semibold text-text-primary mb-4 border-b">
                 {category.name}
               </h3>
               
@@ -70,24 +70,36 @@ export default function Projects() {
                         {project.description}
                       </p>
 
-                      <div className="flex flex-wrap gap-1.5 mb-4">
-                        {project.techStack.slice(0, 4).map((tech) => (
-                          <span key={tech} className="px-2 py-1 bg-bg-tertiary text-text-secondary rounded-lg text-[10px] font-medium border border-border-color">
-                            {tech}
-                          </span>
-                        ))}
-                        {project.techStack.length > 4 && (
-                          <span className="px-2 py-1 text-text-tertiary text-[10px]">
-                            +{project.techStack.length - 4}
-                          </span>
-                        )}
+                      <div className="relative mb-4">
+                        {/* Collapsed view */}
+                        <div className="flex flex-wrap gap-1.5 group-hover:hidden">
+                          {project.techStack.slice(0, 4).map((tech) => (
+                            <span key={tech} className="px-2 py-1 bg-bg-tertiary text-text-secondary rounded-lg text-[10px] font-medium border border-border-color">
+                              {tech}
+                            </span>
+                          ))}
+                          {project.techStack.length > 4 && (
+                            <span className="px-2 py-1 text-text-tertiary text-[10px]">
+                              +{project.techStack.length - 4}
+                            </span>
+                          )}
+                        </div>
+
+                        {/* Expanded on hover */}
+                        <div className="hidden group-hover:flex flex-wrap gap-1.5">
+                          {project.techStack.map((tech) => (
+                            <span key={tech} className="px-2 py-1 bg-bg-tertiary text-text-secondary rounded-lg text-[10px] font-medium border border-border-color">
+                              {tech}
+                            </span>
+                          ))}
+                        </div>
                       </div>
 
                       <div className="flex gap-2 mt-auto">
                         {Object.entries(project.githubLink).map(([label, url]) => (
                           <a 
                             key={label}
-                            href={url} 
+                            href={String(url)} 
                             target="_blank" 
                             rel="noopener noreferrer"
                             className="flex-1 text-center px-3 py-2 rounded-full font-medium text-xs transition-all bg-bg-tertiary text-text-primary border border-border-color hover:border-accent-primary hover:bg-accent-primary/5"

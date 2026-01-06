@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import portfolioData from '@/portfolio-data.json';
+import portfolioData from '@/portfolio-data.json5';
 import Image from 'next/image';
 
 export default function Experience() {

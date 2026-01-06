@@ -1,6 +1,6 @@
 'use client';
 
-import portfolioData from "@/portfolio-data.json";
+import portfolioData from "@/portfolio-data.json5";
 import Image from "next/image";
 import CopyEmailButton from './CopyEmailButton';
 

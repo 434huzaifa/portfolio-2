@@ -64,7 +64,7 @@ portfolio/
 ├── next-env.d.ts
 ├── next.config.js
 ├── package.json
-├── portfolio-data.json
+├── portfolio-data.json5
 ├── postcss.config.js
 ├── QUICK_START.md
 ├── README.md

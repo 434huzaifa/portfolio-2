@@ -16,6 +16,7 @@
     "@emailjs/browser": "^4.4.1",
     "@emailjs/nodejs": "^5.0.2",
     "date-fns": "^3.0.0",
+    "json5": "^2.2.3",
     "next": "^14.2.0",
     "prismjs": "^1.30.0",
     "react": "^18.3.0",

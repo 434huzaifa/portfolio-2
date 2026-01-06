@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { useTheme } from '@/contexts/ThemeContext';
 import { MdAccessibility } from 'react-icons/md';
-import portfolioData from '@/portfolio-data.json';
+import portfolioData from '@/portfolio-data.json5';
 import { TiMinus, TiPlus } from 'react-icons/ti';
 
 export default function Navigation() {

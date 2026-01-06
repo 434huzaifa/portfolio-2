@@ -100,10 +100,14 @@ export interface Projects {
 
 export interface Award {
   title: string;
-  issuer: string;
-  description: string;
-  year: string;
+  organization: string;
+  description?: string;
+  date: string;
   featured: boolean;
+  link?: string;
+  category?: string;
+  visible?: boolean;
+  showInSeeMore?: boolean;
 }
 
 export interface Awards {
