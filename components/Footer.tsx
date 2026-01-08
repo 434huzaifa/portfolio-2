@@ -12,7 +12,10 @@ export default function Footer() {
             © {currentYear} {siteMetadata.author}. All rights reserved.
           </p>
           <p className="text-text-tertiary text-xs">
-            Built with Next.js & TypeScript
+            Built with Next.js & TypeScript 
+          </p>
+          <p className="text-text-tertiary text-xs text-red-300">
+            This site uses privacy-friendly analytics to improve user experience.
           </p>
         </div>
       </div>

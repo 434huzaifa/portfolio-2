@@ -11,7 +11,6 @@ import Awards from '@/components/Awards';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 import AnimatedBackground from '@/components/AnimatedBackground';
-import DraggableThemeToggle from '@/components/DraggableThemeToggle';
 import { ThemeProvider } from '@/contexts/ThemeContext';
 import portfolioData from '@/portfolio-data.json5';
 import { validatePortfolioData } from '@/lib/portfolio-utils';
@@ -79,7 +78,6 @@ export default function Home() {
   return (
     <ThemeProvider>
       <AnimatedBackground />
-      <DraggableThemeToggle />
       <Navigation />
       <BottomNavigation />
       <main className="pb-20 md:pb-0">
