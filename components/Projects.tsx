@@ -4,7 +4,7 @@ import { useState } from 'react';
 import portfolioData from '@/portfolio-data';
 import { getVisibleItems } from '@/lib/portfolio-utils';
 import { Project } from '@/lib/types';
-import Image from 'next/image';
+
 
 export default function Projects() {
   const { projects } = portfolioData;
@@ -33,11 +33,11 @@ export default function Projects() {
                     {project.thumbnail && (
                       <div className="relative w-full h-48 bg-bg-tertiary overflow-hidden rounded-2xl mb-4">
                         {!imageErrors[project.name] ? (
-                          <Image 
+                          <img
                             src={project.thumbnail}
                             alt={project.name}
-                            fill
-                            className="object-cover transition-transform duration-300 group-hover:scale-105"
+                            className="object-cover absolute inset-0 w-full h-full transition-transform duration-300 group-hover:scale-105"
+                            loading="lazy"
                             onError={() => setImageErrors(prev => ({ ...prev, [project.name]: true }))}
                           />
                         ) : (

@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import portfolioData from "@/portfolio-data";
-import Image from "next/image";
+
 
 export default function Experience() {
   const { experience } = portfolioData;
@@ -33,22 +33,24 @@ export default function Experience() {
                     <span className="text-xl font-bold text-accent-primary object-contain relative group/logo">
                       {position?.icon ? (
                         <>
-                          <Image
+                          <img
                             src={position.icon}
                             alt={position.company}
                             width={48}
                             height={48}
                             className="rounded-xl cursor-zoom-in"
+                            loading="lazy"
                           />
                           {/* Hover Popover — image only */}
                           <span className="absolute left-1/2 top-full z-50 mt-3 hidden -translate-x-1/2 group-hover/logo:block">
                             <span className="w-64 h-64 rounded-xl bg-bg-primary border border-border-color shadow-2xl flex items-center justify-center p-4 transition-all duration-200 ease-out opacity-0 scale-95 group-hover/logo:opacity-100 group-hover/logo:scale-100">
-                              <Image
+                              <img
                                 src={position.icon}
                                 alt={`${position.company} logo`}
                                 width={256}
                                 height={256}
                                 className="object-contain"
+                                loading="lazy"
                               />
                             </span>
                           </span>

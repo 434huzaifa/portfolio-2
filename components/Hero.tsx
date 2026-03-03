@@ -1,7 +1,6 @@
 'use client';
 
 import portfolioData from "@/portfolio-data";
-import Image from "next/image";
 import CopyEmailButton from './CopyEmailButton';
 
 export default function Hero() {
@@ -23,12 +22,11 @@ export default function Hero() {
                     <div className="absolute -inset-1 bg-gradient-to-r from-accent-primary to-blue-500 rounded-2xl blur-xl opacity-60 group-hover:opacity-80 transition duration-1000 group-hover:duration-200 animate-pulse"></div>
                     {/* Photo */}
                     <div className="relative w-24 h-24 md:w-32 md:h-32 rounded-2xl overflow-hidden border-2 border-accent-primary shadow-xl">
-                      <Image
+                      <img
                         src={hero.photo}
                         alt={hero.name}
-                        fill
-                        className="object-cover"
-                        priority
+                        className="object-cover absolute inset-0 w-full h-full"
+                        loading="eager"
                       />
                     </div>
                   </div>
