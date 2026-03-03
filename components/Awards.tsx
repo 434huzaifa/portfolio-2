@@ -1,4 +1,4 @@
-import portfolioData from "@/portfolio-data.json5";
+import portfolioData from "@/portfolio-data";
 
 export default function Awards() {
   const { awards } = portfolioData;

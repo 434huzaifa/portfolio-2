@@ -6,7 +6,7 @@ A modern, SEO-friendly portfolio website built with Next.js, TypeScript, and JSO
 
 - ✅ **SEO Optimized**: Meta tags, semantic HTML, and static generation
 - ✅ **Dark/Light Mode**: Smooth theme switching with localStorage persistence
-- ✅ **JSON-Driven Content**: Easy content management through portfolio-data.json5
+- ✅ **TypeScript-Driven Content: Easy content management through portfolio-data.ts
 - ✅ **Fully Responsive**: Mobile-first design that works on all devices
 - ✅ **Dynamic Sections**: Show/hide content with "See More" functionality
 - ✅ **Fast & Lightweight**: Static export for optimal performance
@@ -36,7 +36,7 @@ portfolio/
 ├── lib/
 │   ├── types.ts           # TypeScript type definitions
 │   └── portfolio-utils.ts # Validation and utility functions
-├── portfolio-data.json5   # All portfolio content (EDIT THIS!)
+├── portfolio-data.ts   # All portfolio content (EDIT THIS!)
 ├── package.json
 ├── tsconfig.json
 └── next.config.js
@@ -59,7 +59,7 @@ npm install
 
 2. **Edit Your Portfolio Data**
 
-Open `portfolio-data.json5` and update with your information:
+Open `portfolio-data.ts` and update with your information:
 - Personal details (name, title, description)
 - Work experience
 - Skills and technologies
@@ -92,7 +92,7 @@ npm run start
 
 ## Content Management
 
-### portfolio-data.json5 Structure
+### portfolio-data.ts Structure
 
 The JSON file controls all content and section ordering:
 
@@ -148,7 +148,7 @@ Edit CSS variables in `app/globals.css`:
 
 ### Section Order
 
-Change the order of sections by editing the `sectionOrder` array in `portfolio-data.json5`:
+Change the order of sections by editing the `sectionOrder` array in `portfolio-data.ts`:
 
 ```json
 "sectionOrder": [
@@ -164,7 +164,7 @@ Change the order of sections by editing the `sectionOrder` array in `portfolio-d
 
 ### Adding New Projects/Experience
 
-Simply add new objects to the respective arrays in `portfolio-data.json5`. The site will automatically render them.
+Simply add new objects to the respective arrays in `portfolio-data.ts`. The site will automatically render them.
 
 ## Deployment
 
@@ -179,7 +179,7 @@ The site is configured for static export. You can deploy to:
 
 ### Environment-Specific Setup
 
-No environment variables needed! Everything is managed through `portfolio-data.json5`.
+No environment variables needed! Everything is managed through `portfolio-data.ts`.
 
 ## SEO Features
 
@@ -207,7 +207,7 @@ No environment variables needed! Everything is managed through `portfolio-data.j
 
 ## Tips for Customization
 
-1. **Update Social Links**: Replace dummy links in `portfolio-data.json5` with your actual profiles
+1. **Update Social Links**: Replace dummy links in `portfolio-data.ts` with your actual profiles
 2. **Add Real Projects**: Replace example projects with your real work
 3. **Optimize Images**: If you add images later, use Next.js Image component
 4. **Keep It Simple**: Follow the "MUST DO / SKIP" guidelines from website_section.txt
@@ -242,4 +242,4 @@ For issues or questions:
 
 ---
 
-**Ready to deploy?** Update your content in `portfolio-data.json5`, run `npm run build`, and deploy the `out/` folder!
+**Ready to deploy?** Update your content in `portfolio-data.ts`, run `npm run build`, and deploy the `out/` folder!

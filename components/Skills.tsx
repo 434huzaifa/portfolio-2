@@ -1,9 +1,10 @@
 'use client';
 
 import { useState } from 'react';
-import portfolioData from '@/portfolio-data.json5';
+import portfolioData from '@/portfolio-data';
 import { getIconUrl, getVisibleItems } from '@/lib/portfolio-utils';
-import Image from 'next/image';
+// next/image is not used here — skillicons.dev icons are external URLs.
+// Plain <img> is correct and safe for a static-export site.
 
 export default function Skills() {
   const { skills } = portfolioData;
@@ -53,12 +54,14 @@ export default function Skills() {
                     <div key={skillName} className="flex flex-col items-center gap-2 group">
                       <div className="w-12 h-12 rounded-xl bg-bg-tertiary border border-border-color flex items-center justify-center group-hover:scale-110 transition-transform">
                         {iconUrl ? (
-                          <Image 
+                          // eslint-disable-next-line @next/next/no-img-element
+                          <img
                             src={iconUrl}
                             alt={skillName}
                             width={32}
                             height={32}
                             className="w-8 h-8"
+                            loading="lazy"
                           />
                         ) : (
                           <span className="text-lg font-bold text-accent-primary">

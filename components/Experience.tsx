@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import portfolioData from "@/portfolio-data.json5";
+import portfolioData from "@/portfolio-data";
 import Image from "next/image";
 
 export default function Experience() {
@@ -11,7 +11,9 @@ export default function Experience() {
   // Show only first position initially
   const displayPositions = showAll
     ? experience.positions
-    : experience.positions.slice(0, 1);
+    : experience.positions.slice(0, 2);
+
+    
 
   return (
     <section id="experience" className="section">

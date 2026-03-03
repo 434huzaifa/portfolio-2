@@ -29,7 +29,7 @@ The system validates:
 ```
 ⚠️ Portfolio Data Validation Errors
 
-There are 3 issue(s) with your portfolio data. Please fix the following errors in portfolio-data.json5:
+There are 3 issue(s) with your portfolio data. Please fix the following errors in portfolio-data.ts:
 
 1. hero → socialLinks → github: GitHub URL must be valid
 2. projects → categories → 0 → projects → 0 → techStack: At least one tech stack item is required
@@ -122,11 +122,11 @@ These fields can be omitted:
 
 ## Tips
 
-1. **Use a JSON Validator**: Tools like jsonlint.com can catch syntax errors
-2. **Check Commas**: Missing or extra commas are common JSON errors
+1. **Use TypeScript**: Your editor (VS Code) highlights type errors in `portfolio-data.ts` automatically
+2. **Check Commas**: Missing or extra commas are common syntax errors
 3. **Verify Quotes**: All strings must use double quotes `"`, not single quotes `'`
 4. **Test URLs**: Make sure your URLs actually work in a browser
-5. **Keep Backups**: Before making major changes, copy your working JSON
+5. **Keep Backups**: Before making major changes, copy your working `portfolio-data.ts`
 
 ## Troubleshooting
 
@@ -149,10 +149,10 @@ These fields can be omitted:
 
 If you're stuck:
 1. Check the browser console for detailed Zod validation output
-2. Look at the example `portfolio-data.json5` for proper structure
+2. Look at the example `portfolio-data.ts` for proper structure
 3. Compare your data structure with the TypeScript types in `lib/types.ts`
 4. Review the Zod schemas in `lib/portfolio-utils.ts`
 
 ---
 
-**Note**: The validation system is designed to help you catch errors early. If you see a validation error page, don't worry - just follow the error messages to fix the issues in your JSON file.
+**Note**: The validation system is designed to help you catch errors early. If you see a validation error page, don't worry - just follow the error messages to fix the issues in your `portfolio-data.ts` file.

@@ -12,7 +12,7 @@ import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 import AnimatedBackground from '@/components/AnimatedBackground';
 import { ThemeProvider } from '@/contexts/ThemeContext';
-import portfolioData from '@/portfolio-data.json5';
+import portfolioData from '@/portfolio-data';
 import { validatePortfolioData } from '@/lib/portfolio-utils';
 
 export default function Home() {
@@ -31,7 +31,7 @@ export default function Home() {
             
             <p className="text-text-secondary mb-6">
               There are {validationResult.errors.length} issue(s) with your portfolio data. 
-              Please fix the following errors in <code className="px-2 py-1 bg-bg-tertiary rounded text-accent-primary">portfolio-data.json5</code>:
+              Please fix the following errors in <code className="px-2 py-1 bg-bg-tertiary rounded text-accent-primary">portfolio-data.ts</code>:
             </p>
             
             <div className="space-y-3">

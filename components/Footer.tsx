@@ -1,4 +1,4 @@
-import portfolioData from '@/portfolio-data.json5';
+import portfolioData from '@/portfolio-data';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();

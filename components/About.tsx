@@ -1,4 +1,4 @@
-import portfolioData from '@/portfolio-data.json5';
+import portfolioData from '@/portfolio-data';
 
 export default function About() {
   const { about } = portfolioData;
@@ -11,10 +11,10 @@ export default function About() {
         <div className="max-w-5xl mx-auto">
           {/* Summary as bullet points */}
           <div className="mb-8 max-w-3xl mx-auto">
-            <div className="flex items-start gap-3 text-base text-text-secondary leading-relaxed">
+            {/* <div className="flex items-start gap-3 text-base text-text-secondary leading-relaxed">
               <span className="text-accent-primary mt-1 text-xl">•</span>
               <p>{about.summary}</p>
-            </div>
+            </div> */}
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">

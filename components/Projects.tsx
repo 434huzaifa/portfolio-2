@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import portfolioData from '@/portfolio-data.json5';
+import portfolioData from '@/portfolio-data';
 import { getVisibleItems } from '@/lib/portfolio-utils';
 import { Project } from '@/lib/types';
 import Image from 'next/image';

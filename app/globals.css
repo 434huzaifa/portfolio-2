@@ -1,6 +1,7 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* Tailwind CSS v4 — replaces @tailwind base/components/utilities */
+@import "tailwindcss";
+/* Load v3-style config in Tailwind v4 compatibility mode */
+@config "../tailwind.config.ts";
 
 @layer base {
   :root {

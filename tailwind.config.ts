@@ -1,3 +1,5 @@
+// Tailwind CSS v4 compatibility config
+// Referenced via `@config "./tailwind.config.ts"` in globals.css
 import type { Config } from 'tailwindcss'
 
 const config: Config = {
@@ -6,11 +8,11 @@ const config: Config = {
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
-  darkMode: ['class', '[data-theme="dark"]'],
+  // Tailwind v4: 'selector' replaces the v3 array syntax for custom selectors
+  darkMode: ['selector', '[data-theme="dark"]'],
   theme: {
     extend: {
       colors: {
-        // Light mode
         'bg-primary': 'var(--bg-primary)',
         'bg-secondary': 'var(--bg-secondary)',
         'bg-tertiary': 'var(--bg-tertiary)',

@@ -1,5 +1,8 @@
 import type { MetadataRoute } from 'next'
-import portfolioData from '@/portfolio-data.json5'
+import portfolioData from '@/portfolio-data'
+
+// Required in Next.js 16 with output: 'export'
+export const dynamic = 'force-static'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = portfolioData.siteMetadata.siteUrl

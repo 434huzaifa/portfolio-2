@@ -1,12 +1,47 @@
-// Portfolio content in JSON5 format
-{
+// Portfolio content — edit this file to update your portfolio.
+// Single source of truth for all content, SEO metadata, and site configuration.
+
+const portfolioData = {
   siteMetadata: {
-    title: "MD. Huzaifa - Software Engineer Portfolio",
-    description: "Full-stack Software Engineer specializing in NestJS, React, Microservices, and Modern Web Technologies. Award-winning developer at Sheba Platform Limited.",
+    // ─── SEO: title shown in browser tabs & search results ────────────────────
+    title: "MD. Huzaifa | Freelance Full Stack Developer & Web Developer for Hire",
+    // ─── SEO: meta description (shown in Google snippets ~155 chars) ────────────
+    description:
+      "Freelance full-stack web developer specializing in React, Next.js, Node.js & NestJS. Award-winning engineer building scalable web apps & APIs. Available for hire — remote & worldwide.",
     author: "MD. Huzaifa",
+    // ─── SEO: target keywords — commercial, local & technology intent ─────────
     keywords: [
+      // ── Commercial / Hire-intent keywords ──────────────────────────────────
+      "freelance web developer",
+      "web developer for hire",
+      "hire full stack developer",
+      "freelance full stack developer",
+      "hire web developer",
+      "web development services",
+      "custom web development",
+      "remote web developer",
+      "professional web developer",
+      "freelance developer",
+      // ── Local SEO / "near me" keywords ────────────────────────────────────
+      "web developer near me",
+      "full stack developer near me",
+      "freelance developer near me",
+      "hire developer near me",
+      "software developer near me",
+      // ── Technology keywords ────────────────────────────────────────────────
+      "React developer for hire",
+      "Next.js developer",
+      "Node.js developer",
+      "NestJS developer",
+      "TypeScript developer",
+      "JavaScript developer",
+      "API developer",
+      "backend developer for hire",
+      "frontend developer for hire",
+      // ── Core skills ────────────────────────────────────────────────────────
       "Software Engineer",
       "Full Stack Developer",
+      "full stack web developer",
       "NestJS",
       "React",
       "Microservices",
@@ -20,7 +55,8 @@
     name: "MD. HUZAIFA",
     title: "Software Engineer",
     tagline: "Building scalable web applications with modern technologies",
-    description: "Software Engineer specializing in scalable backend systems, FinTech platforms, and microservices used by thousands of users. Core developer of award-winning payment solutions.",
+    description:
+      "Software Engineer specializing in scalable backend systems, FinTech platforms, and microservices used by thousands of users. Core developer of award-winning payment solutions.",
     photo: "/Huzaifa.png",
     showPhoto: true,
     primaryTech: ["NestJS", "React", "TypeScript", "Docker", "Microservices"],
@@ -43,7 +79,8 @@
   },
   about: {
     title: "About Me",
-    summary: "Core developer at Sheba Platform Limited contributing to award-winning FinTech products. Specialized in building scalable backend systems and microservice architectures that serve thousands of users daily.",
+    summary:
+      "Core developer at Sheba Platform Limited contributing to award-winning FinTech products. Specialized in building scalable backend systems and microservice architectures that serve thousands of users daily.",
     highlights: [
       "Core developer of Sheba Pay - FinTech Start-Up of the Year 2025",
       "Backend developer for award-recognized PSP Passthrough module",
@@ -108,10 +145,10 @@
         name: "DevOps & Tools",
         items: [
           { name: "Docker", icon: "docker" },
-          { name: "Git", icon: "git" },
-          { name: "Linux", icon: "linux" },
-          { name: "Postman", icon: "postman" },
-          { name: "Figma", icon: "figma" },
+          { name: "Nginx", icon: "nginx" },
+          { name: "Cloudflare DNS", icon: "cloudflare" },
+          { name: "EC2" },
+          { name: "CI/CD" },
         ],
         visible: true,
       },
@@ -122,9 +159,19 @@
           { name: "REST APIs" },
           { name: "JWT Authentication" },
           { name: "Payment Systems" },
-          { name: "CI/CD" },
         ],
         visible: true,
+      },
+      {
+        name: "Miscellaneous",
+        items: [
+          { name: "Git", icon: "git" },
+          { name: "Linux", icon: "linux" },
+          { name: "Postman", icon: "postman" },
+          { name: "Figma", icon: "figma" },
+        ],
+        visible: false,
+        showInSeeMore: true,
       },
       {
         name: "Soft Skills",
@@ -147,7 +194,8 @@
         location: "Dhaka, Bangladesh",
         duration: "DEC 2024 – DEC 2025",
         techStack: ["NestJS", "React", "Microservices", "Docker"],
-        description: "Core developer of Sheba Pay, the platform that won 'FinTech Start-Up of the Year 2025' at the 3rd Bangladesh Fintech Awards, contributing to major product features across the system.",
+        description:
+          "Core developer of Sheba Pay, the platform that won 'FinTech Start-Up of the Year 2025' at the 3rd Bangladesh Fintech Awards, contributing to major product features across the system.",
         highlights: [
           "Core developer of Sheba Pay, the platform that won 'FinTech Start-Up of the Year 2025' at the 3rd Bangladesh Fintech Awards",
           "Backend developer for the award-recognized PSP Passthrough module with Honorable Mention for 'FinTech Innovation of the Year (NBFI)'",
@@ -164,7 +212,8 @@
         location: "Dhaka, Bangladesh",
         duration: "OCT 2024 – DEC 2024",
         techStack: ["Supabase", "Deno", "Next.js"],
-        description: "Contributed to both frontend and backend development, successfully transforming a Java-based system into a Deno-powered web application.",
+        description:
+          "Contributed to both frontend and backend development, successfully transforming a Java-based system into a Deno-powered web application.",
         highlights: [
           "Transformed a Java-based system into a modern Deno-powered web application",
           "Deployed and maintained the project on Supabase, ensuring reliability and scalability",
@@ -180,7 +229,8 @@
         location: "Dhaka, Bangladesh",
         duration: "AUG 2023 – NOV 2023",
         techStack: ["Python", "Django", "MySQL", "PowerShell"],
-        description: "Worked on in-house projects including employee attendance and invoice generation systems.",
+        description:
+          "Worked on in-house projects including employee attendance and invoice generation systems.",
         highlights: [
           "Created Employee attendance with invoice generation system",
           "Designed database and APIs from scratch with no documentation",
@@ -204,9 +254,12 @@
             type: "Team Project",
             tagline: "Event Management & Meeting Platform",
             thumbnail: "/project-thumbs/timeforge.webp",
-            description: "Comprehensive event and meeting management platform with Google Calendar integration and secure meeting hosting.",
-            problem: "Difficulty in managing multiple event types and hosting secure meetings with controlled attendee access",
-            solution: "Built a feature-rich platform with Google Calendar API integration, Stripe payments, and admin panel for seamless event management",
+            description:
+              "Comprehensive event and meeting management platform with Google Calendar integration and secure meeting hosting.",
+            problem:
+              "Difficulty in managing multiple event types and hosting secure meetings with controlled attendee access",
+            solution:
+              "Built a feature-rich platform with Google Calendar API integration, Stripe payments, and admin panel for seamless event management",
             techStack: [
               "React",
               "Express",
@@ -221,7 +274,8 @@
               "Feature-rich Admin panel for CRUD operations",
               "Google Calendar integration for multi-platform support",
             ],
-            myRole: "Team Leader - Integrated Google Calendar API, implemented meeting hosting feature, distributed tasks among teammates",
+            myRole:
+              "Team Leader - Integrated Google Calendar API, implemented meeting hosting feature, distributed tasks among teammates",
             githubLink: {
               Client: "https://github.com/CareerNavigators/timeforge-client",
               Server: "https://github.com/CareerNavigators/timeforge-server",
@@ -235,9 +289,12 @@
             type: "Team Project",
             tagline: "Salon Booking Platform",
             thumbnail: "/project-thumbs/neat-site.png",
-            description: "An Uber-like platform for salon services, connecting clients with salons for easy appointment booking and management.",
-            problem: "Clients struggle to find and book salon appointments, salon owners need better appointment management",
-            solution: "Created a two-sided platform where clients can search and book appointments while salon owners manage their services and schedules",
+            description:
+              "An Uber-like platform for salon services, connecting clients with salons for easy appointment booking and management.",
+            problem:
+              "Clients struggle to find and book salon appointments, salon owners need better appointment management",
+            solution:
+              "Created a two-sided platform where clients can search and book appointments while salon owners manage their services and schedules",
             techStack: ["Django", "MySQL", "HTML", "CSS", "jQuery"],
             features: [
               "Search and book appointments with any salon",
@@ -245,7 +302,8 @@
               "Real-time availability checking",
               "Service catalog management",
             ],
-            myRole: "Backend Developer - Designed and managed the database, created all necessary APIs",
+            myRole:
+              "Backend Developer - Designed and managed the database, created all necessary APIs",
             githubLink: {
               Repository: "https://github.com/434huzaifa/Neat-Site",
             },
@@ -262,9 +320,12 @@
             type: "Personal Project",
             tagline: "Educational Platform Backend API",
             thumbnail: "/project-thumbs/edusphere.png",
-            description: "RESTful API for educational platform with complete CRUD operations, email functionality, and comprehensive API documentation.",
-            problem: "Need for a robust, well-documented backend API for educational applications",
-            solution: "Developed a fully documented API with Swagger UI, email integration via Resend, and validation using Zod",
+            description:
+              "RESTful API for educational platform with complete CRUD operations, email functionality, and comprehensive API documentation.",
+            problem:
+              "Need for a robust, well-documented backend API for educational applications",
+            solution:
+              "Developed a fully documented API with Swagger UI, email integration via Resend, and validation using Zod",
             techStack: [
               "Express",
               "PostgreSQL",
@@ -291,9 +352,12 @@
             type: "Personal Project",
             tagline: "Cryptocurrency Wallet Interface",
             thumbnail: "/project-thumbs/fakewallet.webp",
-            description: "A simulated cryptocurrency wallet interface for learning and demonstration purposes.",
-            problem: "Need for a safe environment to understand cryptocurrency wallet interfaces without real assets",
-            solution: "Built a demo wallet application that simulates real wallet functionality for educational purposes",
+            description:
+              "A simulated cryptocurrency wallet interface for learning and demonstration purposes.",
+            problem:
+              "Need for a safe environment to understand cryptocurrency wallet interfaces without real assets",
+            solution:
+              "Built a demo wallet application that simulates real wallet functionality for educational purposes",
             techStack: [
               "NextJS",
               "antd",
@@ -319,9 +383,12 @@
             type: "Personal Project",
             tagline: "Company Asset Management System",
             thumbnail: "/project-thumbs/asset-trackr.png",
-            description: "Asset tracking system for managing company devices and employee assignments.",
-            problem: "Companies need efficient ways to track devices assigned to employees",
-            solution: "Created a simple CRUD application to manage device inventory and employee assignments",
+            description:
+              "Asset tracking system for managing company devices and employee assignments.",
+            problem:
+              "Companies need efficient ways to track devices assigned to employees",
+            solution:
+              "Created a simple CRUD application to manage device inventory and employee assignments",
             techStack: ["React", "Django REST", "SQLite"],
             features: [
               "Insert company device and employee information",
@@ -342,9 +409,12 @@
             type: "Personal Project",
             tagline: "Staff & Booking Management System",
             thumbnail: "/project-thumbs/shift-care.png",
-            description: "Modern admin portal for managing staff members and their booking schedules with calendar views and conflict detection.",
-            problem: "Staff scheduling systems need efficient booking management, conflict prevention, and recurring schedule support",
-            solution: "Built a comprehensive admin portal with calendar views, RRule generator for recurring bookings, and automatic conflict detection",
+            description:
+              "Modern admin portal for managing staff members and their booking schedules with calendar views and conflict detection.",
+            problem:
+              "Staff scheduling systems need efficient booking management, conflict prevention, and recurring schedule support",
+            solution:
+              "Built a comprehensive admin portal with calendar views, RRule generator for recurring bookings, and automatic conflict detection",
             techStack: [
               "Next.js",
               "TypeScript",
@@ -373,7 +443,8 @@
             name: "RestroHub",
             type: "Personal Project",
             tagline: "Restaurant Management Backend",
-            description: "Restaurant management backend with modular RESTful APIs built on Django-Ninja and Django-Ninja-Extra.",
+            description:
+              "Restaurant management backend with modular RESTful APIs built on Django-Ninja and Django-Ninja-Extra.",
             techStack: [
               "Django-Ninja",
               "Django-Ninja-Extra",
@@ -398,7 +469,8 @@
             name: "FilmFolio",
             type: "Personal Project",
             tagline: "Simple Film Rating App",
-            description: "Lightweight film rating experience powered by a Django-Ninja backend and React frontend.",
+            description:
+              "Lightweight film rating experience powered by a Django-Ninja backend and React frontend.",
             techStack: [
               "Django-Ninja",
               "Gunicorn",
@@ -412,8 +484,10 @@
               "Deployed with React frontend and Gunicorn-backed API",
             ],
             githubLink: {
-              "Client Repo": "https://github.com/434huzaifa/AssetTrackr-Frontend",
-              "Server Repo": "https://github.com/434huzaifa/AssetTrackr-backend",
+              "Client Repo":
+                "https://github.com/434huzaifa/AssetTrackr-Frontend",
+              "Server Repo":
+                "https://github.com/434huzaifa/AssetTrackr-backend",
             },
             liveLink: "https://film-folio-omega.vercel.app/",
             featured: false,
@@ -443,7 +517,8 @@
       {
         title: "Published Research Paper",
         organization: "Academic Publication",
-        description: "DeepTestDroid: A Platform for Automated Application Testing Using Deep Learning",
+        description:
+          "DeepTestDroid: A Platform for Automated Application Testing Using Deep Learning",
         date: "2024",
         featured: true,
         link: "https://ieeexplore.ieee.org/document/10271935",
@@ -451,7 +526,8 @@
       {
         title: "Best Scrum Leader",
         organization: "Programming Hero - Batch 8 ENDGAME",
-        description: "Recognized for exceptional team leadership and project management",
+        description:
+          "Recognized for exceptional team leadership and project management",
         date: "2024",
         featured: true,
       },
@@ -484,7 +560,8 @@
   },
   contact: {
     title: "Get In Touch",
-    subtitle: "I'm always open to discussing new projects, creative ideas, or opportunities.",
+    subtitle:
+      "I'm always open to discussing new projects, creative ideas, or opportunities.",
     email: "saadhuzaifa2497@gmail.com",
     phone: "+880 185-8914789",
     whatsapp: "https://wa.link/623ss0",
@@ -525,4 +602,6 @@
       { label: "Contact", href: "#contact" },
     ],
   },
-}
+};
+
+export default portfolioData;

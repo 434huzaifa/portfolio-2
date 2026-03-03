@@ -2,7 +2,7 @@
 
 import { useState, FormEvent } from 'react';
 import emailjs from '@emailjs/browser';
-import portfolioData from '@/portfolio-data.json5';
+import portfolioData from '@/portfolio-data';
 import CopyEmailButton from './CopyEmailButton';
 
 export default function Contact() {

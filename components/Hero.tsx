@@ -1,6 +1,6 @@
 'use client';
 
-import portfolioData from "@/portfolio-data.json5";
+import portfolioData from "@/portfolio-data";
 import Image from "next/image";
 import CopyEmailButton from './CopyEmailButton';
 
@@ -191,7 +191,7 @@ export default function Hero() {
 
           {/* CTA Buttons */}
           <div className="bento-card flex flex-col gap-3">
-            <a href={hero.cta.primary.link} className="btn btn-primary w-full">
+            <a href={hero.cta.primary.link} className="btn btn-primary w-full hover:text-blue-100">
               {hero.cta.primary.text}
             </a>
             <a
