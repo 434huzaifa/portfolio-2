@@ -71,8 +71,8 @@ const portfolioData = {
       },
     },
     socialLinks: {
-      github: "https://github.com/huzaifa",
-      linkedin: "https://linkedin.com/in/md-huzaifa",
+      github: "https://github.com/434huzaifa",
+      linkedin: "https://www.linkedin.com/in/434-md-huzaifa",
       email: "saadhuzaifa2497@gmail.com",
       whatsapp: "https://wa.link/623ss0",
     },
@@ -189,6 +189,23 @@ const portfolioData = {
     title: "Work Experience",
     positions: [
       {
+        company: "VALT.ONE",
+        position: "Software Developer(Backend)",
+        location: "Dhaka, Bangladesh",
+        duration: "APRIL 2026 – PRESENT",
+        techStack: ["NestJS", "PostgreSQL", "Monolithic","MongoDb"],
+        description:
+          "Working on the finance module of the company’s B2B dashboard and financial infrastructure platform.",
+        highlights: [
+          "Developing backend services and APIs for the finance module of the B2B dashboard",
+          "Implementing automated invoice generation with recurring rule system",
+          "Working on secure, scalable, and maintainable backend architecture using modern technologies",
+        ],
+        featured: true,
+        visible: true,
+        icon: "/company-logo/valt.jpg",
+      },
+      {
         company: "Sheba Platform Limited",
         position: "Software Engineer",
         location: "Dhaka, Bangladesh",
@@ -219,8 +236,8 @@ const portfolioData = {
           "Deployed and maintained the project on Supabase, ensuring reliability and scalability",
           "Addressed post-delivery issues and implemented client-requested changes leading to successful project completion",
         ],
-        featured: true,
-        visible: true,
+        featured: false,
+        visible: false,
         icon: "/company-logo/workspace.webp",
       },
       {
