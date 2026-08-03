@@ -4,7 +4,8 @@
 const portfolioData = {
   siteMetadata: {
     // ─── SEO: title shown in browser tabs & search results ────────────────────
-    title: "MD. Huzaifa | Freelance Full Stack Developer & Web Developer for Hire",
+    title:
+      "MD. Huzaifa | Freelance Full Stack Developer & Web Developer for Hire",
     // ─── SEO: meta description (shown in Google snippets ~155 chars) ────────────
     description:
       "Freelance full-stack web developer specializing in React, Next.js, Node.js & NestJS. Award-winning engineer building scalable web apps & APIs. Available for hire — remote & worldwide.",
@@ -193,7 +194,7 @@ const portfolioData = {
         position: "Software Developer(Backend)",
         location: "Dhaka, Bangladesh",
         duration: "APRIL 2026 – PRESENT",
-        techStack: ["NestJS", "PostgreSQL", "Monolithic","MongoDb"],
+        techStack: ["NestJS", "PostgreSQL", "Monolithic", "MongoDb"],
         description:
           "Working on the finance module of the company’s B2B dashboard and financial infrastructure platform.",
         highlights: [
@@ -333,6 +334,30 @@ const portfolioData = {
         name: "Personal Projects",
         projects: [
           {
+            name: "Shifty",
+            type: "Personal Project",
+            tagline: "A rotation overview for shift workers",
+            thumbnail: "/project-thumbs/shifty.png",
+            description:
+              "Shifty is a year-at-a-glance shift rotation planner. Define a repeating shift pattern, pick a start date, and Shifty lays out the whole year so you can see which days you're on and off at a glance.",
+            problem: "",
+            solution: "",
+            techStack: ["NextJS", "PostgreSQL", "Driver"],
+            features: [
+              "Year calendar view — every month rendered together, with each day colored by shift status.",
+              "Custom shift patterns — configure a repeating on/off (or multi-shift) rotation from a chosen start date.",
+              "Day status popup — click a day to inspect or override its status.",
+              "Date picker controls for adjusting the rotation start and navigating the calendar.",
+              "Guided tutorial (via driver.js) that walks new users through setting up their first pattern.",
+            ],
+            githubLink: {
+              Repository: "https://github.com/434huzaifa/shifty",
+            },
+            liveLink: "https://shifty-kappa.vercel.app/",
+            featured: false,
+            visible: true,
+          },
+          {
             name: "EduSphere",
             type: "Personal Project",
             tagline: "Educational Platform Backend API",
@@ -392,7 +417,7 @@ const portfolioData = {
               Repository: "https://github.com/434huzaifa/fake-wallet",
             },
             liveLink: "https://fake-wallet.netlify.app/",
-            featured: true,
+            featured: false,
             visible: true,
           },
           {
