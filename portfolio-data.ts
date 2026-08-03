@@ -50,7 +50,7 @@ const portfolioData = {
       "Next.js",
       "TypeScript",
     ],
-    siteUrl: "https://mdhuzaifa.dev",
+    siteUrl: "https://huzaifa.ami.bd",
   },
   hero: {
     name: "MD. HUZAIFA",

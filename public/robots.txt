@@ -3,8 +3,7 @@ User-agent: *
 Allow: /
 
 # Sitemaps
-Sitemap: https://devhuzaifa.netlify.app/sitemap.xml
-Sitemap: https://mdhuzaifa.dev/sitemap.xml
+Sitemap: https://huzaifa.ami.bd/sitemap.xml
 
 # Disallow admin routes if any
 Disallow: /admin

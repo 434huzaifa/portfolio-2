@@ -10,6 +10,7 @@ import styles from './BlogPost.module.css'
 import { ThemeProvider } from '@/contexts/ThemeContext'
 import DraggableThemeToggle from '@/components/DraggableThemeToggle'
 import AnimatedBackground from '@/components/AnimatedBackground'
+import portfolioData from '@/portfolio-data'
 
 interface BlogPostContent {
   title: string
@@ -126,7 +127,7 @@ export function BlogPostComponent({
                 Twitter
               </a>
               <a
-                href={`https://www.linkedin.com/sharing/share-offsite/?url=https://mdhuzaifa.dev/blog`}
+                href={`https://www.linkedin.com/sharing/share-offsite/?url=${portfolioData.siteMetadata.siteUrl}/blog`}
                 target="_blank"
                 rel="noopener noreferrer"
               >

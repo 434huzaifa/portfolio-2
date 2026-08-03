@@ -75,7 +75,7 @@ export default function RRuleBlogPost() {
       readTime="4 min read"
       category="Web Development"
       author="MD. Huzaifa"
-      authorLink="https://devhuzaifa.netlify.app/"
+      authorLink="https://huzaifa.ami.bd/"
       toc={tableOfContents}
       content={
         <>
